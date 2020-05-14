@@ -1,26 +1,25 @@
-import React, { Component } from 'react';
-import FollowFriendListItem from './FollowFriendListItem';
+import React, { Component } from "react";
+import FollowFriendListItem from "./FollowFriendListItem";
 class RecommendedFriends extends Component {
-  friends =[{username: 'an', image:'https://image.shutterstock.com/image-photo/macro-leaves-background-texture-blue-600w-728448754.jpg'},
-  {username: 'na', image:'https://image.shutterstock.com/image-photo/macro-leaves-background-texture-blue-600w-728448754.jpg'},
-  {username: 'ly',  image:'https://image.shutterstock.com/image-photo/macro-leaves-background-texture-blue-600w-728448754.jpg'}]
-   render(){
-      return(
-        <div className='row'>
-         <div className='col-6'>
-           <div>gợi ý cho bạn</div>
-            {this.friends.map(user=>(
-            <FollowFriendListItem key={`key:${user.name}`}
-            {...user}
-            />
-         ))}   
-         </div>
-         <div className='col-6'>
-            Xem tất cả
-         
-         </div>
+  render() {
+    // Truyền vào thì mình nhận lại ở đây
+    const { friends } = this.props;
+    // Mình vừa nhận vào thì mình bỏ xuống dưới
+
+    return (
+      <div className="col-4">
+        <div className="recommended-friends-header">
+          <div>Gợi ý cho bạn</div>
+          <div>Xem tất cả</div>
         </div>
-      )
-   }
+
+        <div className="recommanded-friends-list">
+          {friends.map((user) => (
+            <FollowFriendListItem key={`key:${user.name}`} user={user} />
+          ))}
+        </div>
+      </div>
+    );
+  }
 }
 export default RecommendedFriends;

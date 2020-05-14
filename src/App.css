@@ -71,3 +71,27 @@ i{
 .row{
   display: flex;
 }
+
+.recommended-friends-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.friend-list-item-wrapper {
+display: flex;
+}
+.recommended-friends-header{
+  margin: 0 60px 0 20px;
+}
+.follow{
+  margin-top: 10px;
+  width: 100%;
+}
+.avatar-and-text  {
+ margin: 0;
+ padding: 0;
+ width: 100%;
+}
+.name-user{
+
+}
