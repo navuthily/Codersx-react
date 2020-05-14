@@ -7,7 +7,7 @@ class RecommendedFriends extends Component {
     // Mình vừa nhận vào thì mình bỏ xuống dưới
 
     return (
-      <div className="col-4">
+      <div className="col-lg-4 col-sm-12">
         <div className="recommended-friends-header">
           <div>Gợi ý cho bạn</div>
           <div>Xem tất cả</div>
