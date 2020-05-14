@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
+import RecommendedFriends from './components/RecommendedFriends'
 class App extends Component {
   render() {
     var navbar =[
@@ -52,6 +53,7 @@ class App extends Component {
             {elements}
           </nav>
         </div>
+        <RecommendedFriends/>
        </header>
     </div>      
     );

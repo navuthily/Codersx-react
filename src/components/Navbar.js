@@ -5,8 +5,7 @@ class Navbar extends Component {
    
     return (
       <>
-             <a className="p-2 text-dark work " href="#"><i  className={this.props.icon}></i>{this.props.name}</a>
-             
+        <a className="p-2 text-dark work " href="#"><i  className={this.props.icon}></i>{this.props.name}</a>
       </>
     );
   }
