@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import propTypes from 'prop-types'; 
 class FollowFriendListItem extends Component {
   constructor(props) {
     super();
@@ -23,5 +23,11 @@ class FollowFriendListItem extends Component {
       </div>
     );
   }
+}
+FollowFriendListItem.propTypes ={
+user : propTypes.shape({
+  name: propTypes.string,
+  avatarUrl:propTypes.string.isRequired
+})
 }
 export default FollowFriendListItem;

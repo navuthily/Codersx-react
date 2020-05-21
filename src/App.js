@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
 import RecommendedFriends from "./components/RecommendedFriends";
-
+import PropTypes from 'prop-types'; 
 const navbar = [
   {
     id: 1,

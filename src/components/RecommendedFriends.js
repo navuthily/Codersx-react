@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import FollowFriendListItem from "./FollowFriendListItem";
+import PropTypes from 'prop-types'; 
+
 class RecommendedFriends extends Component {
   render() {
     // Truyền vào thì mình nhận lại ở đây
@@ -15,11 +17,12 @@ class RecommendedFriends extends Component {
 
         <div className="recommanded-friends-list">
           {friends.map((user) => (
-            <FollowFriendListItem key={`key:${user.name}`} user={user} />
+            <FollowFriendListItem key={`key:${user.username}`} user={user} />
           ))}
         </div>
       </div>
     );
   }
 }
+
 export default RecommendedFriends;
